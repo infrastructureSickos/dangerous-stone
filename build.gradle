@@ -1,0 +1,5 @@
+ext {
+    modId = 'dangerous_stone'
+    modName = 'DangerousStone'
+    modrinthId = 'sX56MwPI'
+}
