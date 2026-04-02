@@ -19,7 +19,7 @@ public class StoneBreakHandler {
     public void onBlockBreak(BlockEvent.BreakEvent event) {
         if (!(event.getLevel() instanceof Level level)) return;
         if (level.isClientSide()) return;
-        if (!(event.getPlayer() instanceof Player player)) return;
+        Player player = event.getPlayer();
 
         CrackPropagator.propagate(level, event.getPos(), player, RANDOM);
     }
